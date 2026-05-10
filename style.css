@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+    body {
+    background-color: #f4f7f6;
+    display: grid;
+    /* Agora temos apenas uma coluna que ocupa 100% da largura (1fr) */
+    grid-template-columns: 1fr;
+    /* As linhas se ajustam ao conteúdo, exceto o main que cresce (1fr) */
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer";
+    min-height: 100vh;}
